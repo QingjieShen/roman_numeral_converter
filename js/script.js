@@ -29,7 +29,7 @@ const resultClean = () => {
 // get the number of thousands. Since the number inputed is not greater than 3999, so , we don't need to consider about the "4" case.
 const thousandsDigits = (number) => {
     let thousandValue = "";
-    for (i = 0; i < Math.floor(number / 1000); i++) {
+    for (let i = 0; i < Math.floor(number / 1000); i++) {
         thousandValue += "M"
     }
     console.log("Thousand Value is", thousandValue);
